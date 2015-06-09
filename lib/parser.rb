@@ -6,17 +6,27 @@ class Parser
 
   def parse(user_input)
     user_input_array = user_input.split(" ")
-    case user_input_array[0]
+    command = user_input_array.first
+    args = user_input_array[1..-1]
+    case command
     when "add"
-      return AddCommand.new(@calculator,user_input_array[1].to_f)
+      return AddCommand.new(@calculator, *args)
     when "subtract"
-      return SubtractCommand.new(@calculator,user_input_array[1].to_f)
+      return SubtractCommand.new(@calculator, *args)
     when "multiply"
-      return MultiplyCommand.new(@calculator,user_input_array[1].to_f)
+      return MultiplyCommand.new(@calculator, *args)
     when "divide"
-      return DivisionCommand.new(@calculator,user_input_array[1].to_f)
+      return DivisionCommand.new(@calculator, *args)
+    when "sqr"
+      return SqrCommand.new(@calculator, *args)
+    when "abs"
+      return AbsCommand.new(@calculator, *args)
+    when "cube"
+      return CubeCommand.new(@calculator, *args)
+    when "negate"
+      return NegateCommand.new(@calculator, *args)
     when "cancel"
-      return CancelCommand.new(@calculator,user_input_array[1].to_f)
+      return CancelCommand.new(@calculator, *args)
     else
       raise "invalid operations"
     end
