@@ -8,16 +8,17 @@ describe Parser do
     end
     it "should return Sqr object if input is 'sqr 5'" do
       parser = Parser.new(Calculator.new)
-      expect(parser.parse("sqr 5")).to be_instance_of(SqrCommand)
+      expect(parser.parse("sqr")).to be_instance_of(SquareCommand)
     end
     it "should return Negate object if input is 'negate 5'" do
       parser = Parser.new(Calculator.new)
-      expect(parser.parse("negate 5")).to be_instance_of(NegateCommand)
+      expect(parser.parse("negate")).to be_instance_of(NegateCommand)
     end
     it "should return Cube object if input is 'cube 5'" do
       parser = Parser.new(Calculator.new)
-      expect(parser.parse("cube 5")).to be_instance_of(CubeCommand)
+      expect(parser.parse("cube")).to be_instance_of(CubeCommand)
     end
+    
   end
 end
 

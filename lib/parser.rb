@@ -31,6 +31,8 @@ class Parser
       return CubeRootCommand.new(@calculator, *args)
     when "cancel"
       return CancelCommand.new(@calculator, *args)
+    when "cancel"
+      return CancelCommand.new(@calculator, *args)
     else
       raise ArgumentError
     end
