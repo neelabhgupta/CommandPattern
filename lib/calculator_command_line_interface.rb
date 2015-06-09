@@ -7,7 +7,7 @@ class CalculatorCommandLineInterface
   def start
     while (input_string = gets.chomp) != "exit"
       begin
-        parser = Parser.new(@calculator)
+        parser = Parser.new(@calculator, @command_store)
         command = parser.parse(input_string)
         puts command.execute
         @command_store.store(command)

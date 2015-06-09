@@ -1,6 +1,7 @@
 # converts input string to tokens
 class Parser
-  def initialize(calculator)
+  def initialize(calculator, command_store)
+    @command_store = command_store
     @calculator = calculator
   end
 
@@ -29,8 +30,8 @@ class Parser
       return SquareRootCommand.new(@calculator, *args)
     when "cubert"
       return CubeRootCommand.new(@calculator, *args)
-    when "cancel"
-      return CancelCommand.new(@calculator, *args)
+    when "repeat"
+      return RepeatCommand.new(@calculator, @command_store, *args)
     when "cancel"
       return CancelCommand.new(@calculator, *args)
     else

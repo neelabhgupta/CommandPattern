@@ -2,7 +2,7 @@
 class RepeatCommand < BaseCommand
 
 	def initialize(calculator, command_store, *args)
-		if args.length != 1 || !args[0].integer?
+		if args.length != 1# || !args[0].integer?
       raise ArgumentError
     end
     @calculator = calculator
