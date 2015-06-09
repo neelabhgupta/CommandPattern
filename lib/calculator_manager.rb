@@ -1,5 +1,5 @@
-# performs operations for calculator
-class CalculatorManager
+#Executes command line inputs for the calculator
+class CalculatorCommandLineInterface
   def initialize
     @calculator = Calculator.new
   end

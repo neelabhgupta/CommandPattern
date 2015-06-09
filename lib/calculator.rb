@@ -21,6 +21,10 @@ class Calculator
     @value = @value / input
   end
 
+  def square
+    @value = @value * @value
+  end
+
   def cancel
     @value = 0
   end
