@@ -9,11 +9,9 @@ class CalculatorCommandLineInterface
         parser = Parser.new(@calculator)
         command = parser.parse(input_string)
         puts command.execute
-      rescue Exception => e
-        puts e.message
+      rescue StandardError => e
         puts "something went wrong try again"
       end
-      
     end
   end
 end

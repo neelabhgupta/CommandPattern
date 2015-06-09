@@ -28,7 +28,7 @@ class Parser
     when "cancel"
       return CancelCommand.new(@calculator, *args)
     else
-      raise "invalid operations"
+      raise ArgumentError
     end
   end
 end

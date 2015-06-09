@@ -9,4 +9,12 @@ describe DivisionCommand do
     division = DivisionCommand.new(calculator, operand)
     expect(division.execute).to eq(5)
   end
+
+  it "should raise ArgumentError when 0 is passed'" do
+    calculator = Calculator.new
+    calculator.add(-25)
+    operand = 0
+    divide = DivisionCommand.new(calculator, operand)
+    expect{divide.execute}.to raise_error(ArgumentError)
+  end
 end

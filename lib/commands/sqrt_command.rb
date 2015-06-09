@@ -1,6 +1,6 @@
-# executes cancel operation for calculator-operand
-class CancelCommand < BaseCommand
-
+# executes square root operation for calculator-operand
+class SqrtCommand < BaseCommand
+  
   def initialize(calculator, *args)
     if args.length != 0
       raise ArgumentError
@@ -9,6 +9,7 @@ class CancelCommand < BaseCommand
   end
   
   def execute
-    @calculator.cancel()
+    @calculator.sqrt
   end
+
 end

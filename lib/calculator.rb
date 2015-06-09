@@ -18,11 +18,21 @@ class Calculator
   end
 
   def divide(input)
+    if input == 0
+      raise ArgumentError
+    end
     @value = @value / input
   end
 
   def square
     @value = @value * @value
+  end
+
+  def sqrt
+    if @value < 0
+      raise ArgumentError
+    end
+    @value = @value ** (0.5)
   end
 
   def cube
@@ -33,7 +43,7 @@ class Calculator
     @value = @value.abs
   end
 
-   def negate
+  def negate
     @value = -1 * @value
   end
 
