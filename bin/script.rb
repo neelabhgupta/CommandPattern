@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 require_relative '../lib/calc'
-calculator_manager = CalculatorManager.new
-calculator_manager.process_request
+calculator_command_line_interface = CalculatorCommandLineInterface.new
+calculator_command_line_interface.start

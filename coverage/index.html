@@ -14,18 +14,18 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-09T14:56:20+05:30">2015-06-09T14:56:20+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-09T14:59:52+05:30">2015-06-09T14:59:52+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">67.02%</span></span>
+    (<span class="covered_percent"><span class="red">54.26%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.93
+         0.55
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>15</b> files in total.
     <b>94</b> relevant lines. 
-    <span class="green"><b>63</b> lines covered</span> and
-    <span class="red"><b>31</b> lines missed </span>
+    <span class="green"><b>51</b> lines covered</span> and
+    <span class="red"><b>43</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,16 +62,16 @@
       
       <tr>
         <td class="strong"><a href="#643330e444630f22c17a525e78e1227a88a95e9a" class="src_link" title="lib/calculator.rb">lib/calculator.rb</a></td>
-        <td class="red strong">57.14 %</td>
+        <td class="red strong">52.38 %</td>
         <td>43</td>
         <td>21</td>
-        <td>12</td>
-        <td>9</td>
-        <td>0.7</td>
+        <td>11</td>
+        <td>10</td>
+        <td>0.5</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c70846a2b34e17b8bb45a85795d6c798cfe49f26" class="src_link" title="lib/calculator_manager.rb">lib/calculator_manager.rb</a></td>
+        <td class="strong"><a href="#3bfd527216919e59cda52e3e748a65a2085c2274" class="src_link" title="lib/calculator_command_line_interface.rb">lib/calculator_command_line_interface.rb</a></td>
         <td class="red strong">30.0 %</td>
         <td>18</td>
         <td>10</td>
@@ -112,12 +112,12 @@
       
       <tr>
         <td class="strong"><a href="#d3329e24d07f4f34b4d1d60758a37a2d0c8986cf" class="src_link" title="lib/commands/base_command.rb">lib/commands/base_command.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">50.0 %</td>
         <td>7</td>
         <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>2.5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0.5</td>
       </tr>
       
       <tr>
@@ -192,12 +192,12 @@
       
       <tr>
         <td class="strong"><a href="#9127fb1d0b3f4ed16fe17e9e1768c876f4a26edc" class="src_link" title="lib/parser.rb">lib/parser.rb</a></td>
-        <td class="red strong">66.67 %</td>
+        <td class="red strong">16.67 %</td>
         <td>43</td>
         <td>18</td>
-        <td>12</td>
-        <td>6</td>
-        <td>1.5</td>
+        <td>3</td>
+        <td>15</td>
+        <td>0.2</td>
       </tr>
       
     </tbody>
@@ -245,7 +245,7 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative 'calculator_manager'</code>
+          <code class="ruby">require_relative 'calculator_command_line_interface'</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
@@ -261,11 +261,11 @@
         <div class="source_table" id="643330e444630f22c17a525e78e1227a88a95e9a">
   <div class="header">
     <h3>lib/calculator.rb</h3>
-    <h4><span class="red">57.14 %</span> covered</h4>
+    <h4><span class="red">52.38 %</span> covered</h4>
     <div>
       <b>21</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>9</b> lines missed.</span>
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
     </div>
   </div>
   
@@ -296,8 +296,8 @@
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="5">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
           
           <code class="ruby">    @value = 0</code>
         </li>
@@ -534,9 +534,9 @@
   </pre>
 </div>
       
-        <div class="source_table" id="c70846a2b34e17b8bb45a85795d6c798cfe49f26">
+        <div class="source_table" id="3bfd527216919e59cda52e3e748a65a2085c2274">
   <div class="header">
-    <h3>lib/calculator_manager.rb</h3>
+    <h3>lib/calculator_command_line_interface.rb</h3>
     <h4><span class="red">30.0 %</span> covered</h4>
     <div>
       <b>10</b> relevant lines. 
@@ -873,11 +873,11 @@
         <div class="source_table" id="d3329e24d07f4f34b4d1d60758a37a2d0c8986cf">
   <div class="header">
     <h3>lib/commands/base_command.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">50.0 %</span> covered</h4>
     <div>
       <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -902,14 +902,14 @@
           <code class="ruby">  def initialize(calculator,operand = 0)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
           
           <code class="ruby">    @calculator = calculator</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="5">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
           
           <code class="ruby">    @operand = operand</code>
         </li>
@@ -1365,11 +1365,11 @@
         <div class="source_table" id="9127fb1d0b3f4ed16fe17e9e1768c876f4a26edc">
   <div class="header">
     <h3>lib/parser.rb</h3>
-    <h4><span class="red">66.67 %</span> covered</h4>
+    <h4><span class="red">16.67 %</span> covered</h4>
     <div>
       <b>18</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>15</b> lines missed.</span>
     </div>
   </div>
   
@@ -1394,8 +1394,8 @@
           <code class="ruby">  def initialize(calculator)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
           
           <code class="ruby">    @calculator = calculator</code>
         </li>
@@ -1418,26 +1418,26 @@
           <code class="ruby">  def parse(user_input)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="8">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
           
           <code class="ruby">    user_input_array = user_input.split(&quot; &quot;)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="9">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
           
           <code class="ruby">    command = user_input_array.first</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="10">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
           
           <code class="ruby">    args = user_input_array[1..-1]</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="11">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
           
           <code class="ruby">    case command</code>
         </li>
@@ -1448,8 +1448,8 @@
           <code class="ruby">    when &quot;add&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
           
           <code class="ruby">      return AddCommand.new(@calculator, *args)</code>
         </li>
@@ -1496,8 +1496,8 @@
           <code class="ruby">    when &quot;sqr&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
           
           <code class="ruby">      return SqrCommand.new(@calculator, *args)</code>
         </li>
@@ -1520,8 +1520,8 @@
           <code class="ruby">    when &quot;cube&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
           
           <code class="ruby">      return CubeCommand.new(@calculator, *args)</code>
         </li>
@@ -1532,8 +1532,8 @@
           <code class="ruby">    when &quot;negate&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
           
           <code class="ruby">      return NegateCommand.new(@calculator, *args)</code>
         </li>
