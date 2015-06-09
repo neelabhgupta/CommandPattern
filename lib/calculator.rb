@@ -25,6 +25,18 @@ class Calculator
     @value = @value * @value
   end
 
+  def cube
+    @value = @value * @value * @value
+  end
+
+   def abs
+    @value = @value.abs
+  end
+
+   def negate
+    @value = -1 * @value
+  end
+
   def cancel
     @value = 0
   end

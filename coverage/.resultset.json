@@ -38,6 +38,18 @@
         1,
         0,
         null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/ul-tech4/RubyTrain/CalcCMD/Calulator/lib/parser.rb": [
@@ -96,6 +108,9 @@
         null
       ],
       "/Users/ul-tech4/RubyTrain/CalcCMD/Calulator/lib/commands.rb": [
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -167,8 +182,38 @@
         null,
         null,
         null
+      ],
+      "/Users/ul-tech4/RubyTrain/CalcCMD/Calulator/lib/commands/negate_command.rb": [
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/ul-tech4/RubyTrain/CalcCMD/Calulator/lib/commands/abs_command.rb": [
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/ul-tech4/RubyTrain/CalcCMD/Calulator/lib/commands/cube_command.rb": [
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1433841070
+    "timestamp": 1433841643
   }
 }
