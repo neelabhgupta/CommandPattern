@@ -1,5 +1,5 @@
-# executes square root operation for calculator-operand
-class SqrtCommand < BaseCommand
+#Store previous Command Objects
+class AbsCommand < BaseCommand
   
   def initialize(calculator, *args)
     if args.length != 0
@@ -7,9 +7,9 @@ class SqrtCommand < BaseCommand
     end
     @calculator = calculator
   end
-  
+
   def execute
-    @calculator.sqrt
+    @calculator.abs
   end
 
 end

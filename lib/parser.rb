@@ -18,13 +18,17 @@ class Parser
     when "divide"
       return DivisionCommand.new(@calculator, *args)
     when "sqr"
-      return SqrCommand.new(@calculator, *args)
+      return SquareCommand.new(@calculator, *args)
     when "abs"
       return AbsCommand.new(@calculator, *args)
     when "cube"
       return CubeCommand.new(@calculator, *args)
     when "negate"
       return NegateCommand.new(@calculator, *args)
+    when "sqrt"
+      return SquareRootCommand.new(@calculator, *args)
+    when "cubert"
+      return CubeRootCommand.new(@calculator, *args)
     when "cancel"
       return CancelCommand.new(@calculator, *args)
     else

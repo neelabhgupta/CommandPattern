@@ -19,7 +19,7 @@ class Calculator
 
   def divide(input)
     if input == 0
-      raise ArgumentError
+      raise ZeroDivisionError
     end
     @value = @value / input
   end
@@ -28,11 +28,15 @@ class Calculator
     @value = @value * @value
   end
 
-  def sqrt
+  def square_root
     if @value < 0
       raise ArgumentError
     end
-    @value = @value ** (0.5)
+    @value = Math.sqrt(@value)
+  end
+
+  def cube_root
+    @value = Math.cbrt(@value)
   end
 
   def cube

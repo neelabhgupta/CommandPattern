@@ -1,5 +1,5 @@
-# executes square operation for calculator-operand
-class SqrCommand < BaseCommand
+# executes cube root operation for calculator-operand
+class CubeRootCommand < BaseCommand
   
   def initialize(calculator, *args)
     if args.length != 0
@@ -9,7 +9,7 @@ class SqrCommand < BaseCommand
   end
   
   def execute
-    @calculator.square
+    @calculator.cube_root
   end
 
 end

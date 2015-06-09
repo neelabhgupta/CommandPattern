@@ -15,6 +15,6 @@ describe DivisionCommand do
     calculator.add(-25)
     operand = 0
     divide = DivisionCommand.new(calculator, operand)
-    expect{divide.execute}.to raise_error(ArgumentError)
+    expect{divide.execute}.to raise_error(ZeroDivisionError)
   end
 end
