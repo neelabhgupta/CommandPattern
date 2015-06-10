@@ -54,4 +54,9 @@ class Calculator
   def cancel
     @value = 0
   end
+
+  def close
+    exit
+  end
+
 end
