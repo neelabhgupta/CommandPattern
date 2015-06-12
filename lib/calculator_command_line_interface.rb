@@ -1,12 +1,11 @@
-#Executes command line inputs for the calculator
+#Handles command line inputs for the calculator
 class CalculatorCommandLineInterface
   def initialize
     @command_store = CommandStore.new
-    @calculator = Calculator.new
-    @parser = Parser.new(@calculator, @command_store)
+    @parser = Parser.new(@command_store)
   end
-  def start
-    
+
+  def start    
     while true
       begin
         input_string = gets.chomp

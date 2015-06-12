@@ -1,4 +1,4 @@
-#initialze commands
+#provide a base class for different commands
 class BaseCommand
   def initialize(calculator)
     @calculator = calculator

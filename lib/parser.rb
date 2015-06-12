@@ -1,8 +1,8 @@
 # converts input string to tokens
 class Parser
-  def initialize(calculator, command_store)
+  def initialize(command_store)
     @command_store = command_store
-    @calculator = calculator
+    @calculator = Calculator.new
   end
 
   def parse(user_input)
@@ -41,12 +41,3 @@ class Parser
     end
   end
 end
-
-
-
-  # def run 
-  #   while (user_input = gets.chomp) != "exit"
-  #     user_input_array = user_input.split(" ")
-  #     puts parser(user_input_array)
-  #   end
-  # end
