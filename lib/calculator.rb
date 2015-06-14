@@ -1,8 +1,9 @@
 # Performs basic arithmatic operations
 class Calculator
-
+  attr_reader :value
   def initialize
     @value = 0
+    @command_store = CommandStore.new
   end
 
   def add(input)
@@ -59,4 +60,16 @@ class Calculator
     exit
   end
 
+  def repeat(count)
+    previous_commands = @command_store.get_last(count)
+    value = nil
+    previous_commands.each do |command|
+      value = command.execute
+    end
+    value
+  end
+
+  def add_history(receiver)
+    @command_store.store(receiver)
+  end
 end

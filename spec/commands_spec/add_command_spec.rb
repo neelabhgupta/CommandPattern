@@ -5,6 +5,6 @@ describe AddCommand do
     calculator = Calculator.new
     operand = 5
     add = AddCommand.new(calculator, operand)
-    expect(add.execute).to eq(5)
+    expect(add.execute.value).to eq(5)
   end
 end

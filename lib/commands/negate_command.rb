@@ -10,6 +10,7 @@ class NegateCommand < BaseCommand
   
   def execute
     @calculator.negate
+    super
   end
 
 end

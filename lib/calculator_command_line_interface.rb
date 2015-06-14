@@ -1,8 +1,7 @@
 #Handles command line inputs for the calculator
 class CalculatorCommandLineInterface
   def initialize
-    @command_store = CommandStore.new
-    @parser = Parser.new(@command_store)
+    @parser = Parser.new
   end
 
   def start    
@@ -10,8 +9,8 @@ class CalculatorCommandLineInterface
       begin
         input_string = gets.chomp
         command = @parser.parse(input_string)
-        puts command.execute
-        @command_store.store(command)
+        calculator =  command.execute
+        puts calculator.value
       rescue StandardError => e
         puts e.message
       end

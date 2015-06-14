@@ -11,5 +11,6 @@ class MultiplyCommand < BaseCommand
 
   def execute
     @calculator.multiply(@operand)
+    super
   end
 end

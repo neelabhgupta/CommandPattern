@@ -10,6 +10,7 @@ class CubeCommand < BaseCommand
   
   def execute
     @calculator.cube
+    super
   end
 
 end

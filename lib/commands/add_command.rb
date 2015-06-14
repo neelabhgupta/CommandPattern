@@ -9,6 +9,7 @@ class AddCommand < BaseCommand
   end
   def execute
     @calculator.add(@operand)
+    super
   end
 
 end

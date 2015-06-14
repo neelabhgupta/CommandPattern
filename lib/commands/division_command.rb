@@ -11,5 +11,6 @@ class DivisionCommand < BaseCommand
 
   def execute
     @calculator.divide(@operand)
+    super
   end
 end

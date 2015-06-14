@@ -10,6 +10,7 @@ class SquareCommand < BaseCommand
   
   def execute
     @calculator.square
+    super
   end
 
 end

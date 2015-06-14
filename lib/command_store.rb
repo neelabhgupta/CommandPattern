@@ -5,7 +5,7 @@ class CommandStore
   end
 
   def store(command)
-    @command_array.push(command) unless command.instance_of?(RepeatCommand)
+    @command_array.push(command)
   end
 
   def get_last(count)

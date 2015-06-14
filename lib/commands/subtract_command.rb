@@ -11,5 +11,6 @@ class SubtractCommand < BaseCommand
 
   def execute
     @calculator.subtract(@operand)
+    super
   end
 end

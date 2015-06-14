@@ -4,6 +4,11 @@ class BaseCommand
     @calculator = calculator
   end
 
+  def execute
+    @calculator.add_history(self)
+    @calculator
+  end
+
   private
     def is_number(input_string)
       begin

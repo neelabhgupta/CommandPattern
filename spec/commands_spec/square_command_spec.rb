@@ -5,6 +5,6 @@ describe SquareCommand do
     calculator = Calculator.new
     calculator.add(5)
     sqr = SquareCommand.new(calculator)
-    expect(sqr.execute).to eq(25)
+    expect(sqr.execute.value).to eq(25)
   end
 end

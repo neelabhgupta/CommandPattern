@@ -5,6 +5,6 @@ describe CubeCommand do
     calculator = Calculator.new
     calculator.add(5)
     cube = CubeCommand.new(calculator)
-    expect(cube.execute).to eq(125)
+    expect(cube.execute.value).to eq(125)
   end
 end

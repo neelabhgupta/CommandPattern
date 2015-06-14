@@ -10,5 +10,6 @@ class CancelCommand < BaseCommand
   
   def execute
     @calculator.cancel()
+    super
   end
 end

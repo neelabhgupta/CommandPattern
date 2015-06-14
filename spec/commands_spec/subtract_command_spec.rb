@@ -5,6 +5,6 @@ describe SubtractCommand do
     calculator = Calculator.new
     operand = 5
     command = SubtractCommand.new(calculator, operand)
-    expect(command.execute).to eq(-5)
+    expect(command.execute.value).to eq(-5)
   end
 end

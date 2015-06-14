@@ -5,6 +5,6 @@ describe MultiplyCommand do
     calculator = Calculator.new
     operand = 5
     multiply = MultiplyCommand.new(calculator, operand)
-    expect(multiply.execute).to eq(0)
+    expect(multiply.execute.value).to eq(0)
   end
 end

@@ -10,6 +10,7 @@ class AbsCommand < BaseCommand
 
   def execute
     @calculator.abs
+    super
   end
 
 end

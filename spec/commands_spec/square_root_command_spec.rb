@@ -5,7 +5,7 @@ describe SquareRootCommand do
     calculator = Calculator.new
     calculator.add(25)
     sqrt = SquareRootCommand.new(calculator)
-    expect(sqrt.execute).to eq(5)
+    expect(sqrt.execute.value).to eq(5)
   end
 
   it "should raise ArgumentError when -25 is passed'" do

@@ -7,7 +7,7 @@ describe DivisionCommand do
     add = AddCommand.new(calculator,25)
     add.execute
     division = DivisionCommand.new(calculator, operand)
-    expect(division.execute).to eq(5)
+    expect(division.execute.value).to eq(5)
   end
 
   it "should raise ArgumentError when 0 is passed'" do
